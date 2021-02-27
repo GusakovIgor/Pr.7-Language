@@ -1,2 +1,2 @@
 # Pr.7-Language
- My programming language
+ Here you can see a project "Musik Language"
