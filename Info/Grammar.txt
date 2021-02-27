@@ -1,0 +1,41 @@
+
+Description:
+	+  >= 1 repeats
+	*  >= 0 repeats
+	#  0 or 1 repeat
+
+	[a, b, c, ...] - only one of a, b, c, etc.
+
+Grammar:
+	PROG::= MAIN FUNC* '\0'
+	
+	+ MAIN::= 'song' FUNC_NAME '(' ')' CODE
+	+ FUNC::= 'sample' FUNC_NAME ARGS CODE#
+	+ ARGS::= '('VAR_NAME# {',' VAR_NAME}*')'	
+	+ CODE::= STAT+
+	+ STAT::= [VAR_DECL, ASGN, INPUT, OUTPUT, SAVE] ';' | LOOP | COMPARE
+	+-SAVE::= 'save song' | 'save' MATH
+
+	+ VAR_DECL::= 'new' VAR_NAME
+	+ ASGN::=   'choose' [VAR_DECL, VAR_NAME] 'as' MATH
+	+ INPUT::=  'record' [VAR_DECL, VAR_NAME] 'from input'
+	+ OUTPUT::= 'echo' '(' STRING | VAR_NAME ')'
+	
+	+ LOOP::= FORWARD_LOOP | BACKWARD_LOOP
+	+-FORWARD_LOOP::=  'back_echo' '(' VAR_NAME ',' MATH ',' MATH')'
+	+-BACKWARD_LOOP::= 'reverberation' '(' VAR_NAME ',' MATH ',' MATH')'
+
+	COMPARE::= 'pitch' CONDITION '{' CODE '}' {'otherwise' '{' CODE '}'}#
+	CONDITION::= VAR_NAME ['same', 'not', 'higher', 'less'] VAR_NAME
+
+	+ FUNC_NAME::= ['a'-'Z', '_']*
+	+  VAR_NAME::= ['a'-'Z', '_']['a'-'Z', '_', '0'-'9']*
+
+
+	MATH::= 	TERM    {['+', '-'] TERM}*
+	TERM::=     DEGREE  {['*', '/'] DEGREE}*
+	DEGREE::=   PRIMARY {'^' PRIMARY}*
+	PRIMARY::= 	'(' MATH ')' | VAR_OR_FUNC | NUMBER
+
+	VAR_OR_FUNC::= 	VAR_NAME {'(' MATH ')'}#
+	NUMBER::= 	['0'-'9']+ VAR_NAME#

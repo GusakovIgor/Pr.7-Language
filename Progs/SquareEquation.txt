@@ -1,0 +1,72 @@
+song SquareEquation ()
+{
+    record new a from input;
+    record new b from input;
+    record new c from input;
+    
+    choose new x1 as 0;
+    choose new x2 as 0;
+    
+    pitch a same 0
+    {
+        LinearCase (b, c);
+    }
+    otherwise
+    {
+        choose D as Discriminant (a, b, c);
+        
+        SquareSolver (a, b, D);
+    }
+    
+    save song;
+}
+
+
+
+sample Discriminant (a, b, c)
+{
+    choose new disc as 0;
+    disc = b^2 - 4*a*c;
+    
+    save disc;
+}
+
+
+sample LinearCase (a, b)
+{
+    pitch b not 0
+    {
+        echo ("\nThere is one root ");
+        echo ((-c)/b)
+    }
+    otherwise pitch c not 0
+    {
+        echo ("\nThere is no roots");
+    }
+    otherwise
+    {
+        echo ("\nThere is infinite number of roots");
+    }
+}
+
+
+sample SquareSolver (a, b, D)
+{
+    pitch D less 0
+    {
+        echo ("\nThere is no roots");
+    }
+    otherwise pitch D is 0
+    {
+        echo ("\nThere is one root ");
+        echo ((-b) / (2*a));
+    }
+    otherwise
+    {
+        echo ("\nThe first root is ");
+        echo (((-b) + sqrt(D)) / (2*a));
+        
+        echo ("\nAnd the second is ");
+        echo (((-b) - sqrt(D)) / (2*a));
+    }   
+}

@@ -1,0 +1,20 @@
+Syntax of language:
+
+//  song abc                || main
+//  sample abc              || function "abc"
+//  save x                  || return x
+//  save song               || normal end of main
+//  record x from input     || scanf ("%lg", &x)
+//  choose x as ...         || x = ...
+//  echo ("...")            || printf ("...")
+//  echo (x)                || printf ("%lg", x)
+//  back_echo (a; n; 1)     || for (a; a < n; a += 1)
+//  reverberation (a; n; 1) || for (a; a > n; a -= 1)
+//  pitch a higher b        || if (a > b)
+//  otherwise               || else
+//
+//  same   || ==
+//  not    || !=
+//  higher || >
+//  less   || <
+//

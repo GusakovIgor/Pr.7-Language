@@ -1,0 +1,64 @@
+song SquareEquation ()
+{
+    echo (x);
+
+    reverberation (x, 5, 3)
+    {
+        choose new a as (134 + ln(10)) * 16;
+    }
+
+    save song;
+}
+
+
+sample Discriminant (a, b, c)
+{
+    new a;
+    choose a as pi;
+
+    pitch b not 0
+    {
+        echo ("\nThere is one root ");
+        echo ((-c)/b);
+    }
+    otherwise pitch c not 0
+    {
+        echo ("\nThere is no roots");
+    }
+    otherwise
+    {
+        echo ("\nThere is infinite number of roots");
+    }
+    
+
+    save r;
+}
+
+
+sample LinearCase (a, b)
+
+{
+
+    echo ("love you");
+    
+    record r from input;
+    
+    save r;
+}
+
+
+sample SquareSolver (a, b, D)
+{
+    record b from input;
+    choose new x as b;
+
+    
+    back_echo (35, 2, step)
+    {
+        echo ("you're pizdec!");
+    }
+
+    echo ("pretty");
+
+    save r;
+}
