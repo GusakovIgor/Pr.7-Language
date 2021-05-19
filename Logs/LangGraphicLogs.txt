@@ -1,254 +1,358 @@
 digraph 0 {
 node [shape = "record", style = "filled", color = "#000800", fillcolor = " #ED96EC"]
-"0x564626467500" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
-"0x5646264668d0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | SquareEquation"]
-"0x5646264674d0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x564626466ab0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626466a80" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626466a50" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x"]
-"0x564626466a80" -> "0x564626466a50"
-"0x564626466ab0" -> "0x564626466a80"
-"0x5646264672c0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626467290" [color = "#000800", fillcolor = green,    label = "LOOP_TYPE | 0"]
-"0x564626466db0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | \<"]
-"0x564626466d80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x"]
-"0x564626466db0" -> "0x564626466d80"
-"0x564626466c60" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 5"]
-"0x564626466db0" -> "0x564626466c60"
-"0x564626467290" -> "0x564626466db0"
-"0x564626467260" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x564626467230" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626467200" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
-"0x564626466fd0" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
-"0x564626466fa0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
-"0x564626466fd0" -> "0x564626466fa0"
-"0x564626467200" -> "0x564626466fd0"
-"0x5646264671d0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
-"0x564626467170" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | +"]
-"0x564626467070" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 134"]
-"0x564626467170" -> "0x564626467070"
-"0x564626467110" [color = "#000800", fillcolor = green,    label = "MFUNC_TYPE | ln"]
-"0x564626467140" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 10"]
-"0x564626467110" -> "0x564626467140"
-"0x564626467170" -> "0x564626467110"
-"0x5646264671d0" -> "0x564626467170"
-"0x5646264671a0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 16"]
-"0x5646264671d0" -> "0x5646264671a0"
-"0x564626467200" -> "0x5646264671d0"
-"0x564626467230" -> "0x564626467200"
-"0x564626467260" -> "0x564626467230"
-"0x564626466d50" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626466d20" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
-"0x564626466cf0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x"]
-"0x564626466d20" -> "0x564626466cf0"
-"0x564626466cc0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | +"]
-"0x564626466c30" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x"]
-"0x564626466cc0" -> "0x564626466c30"
-"0x564626466c90" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 3"]
-"0x564626466cc0" -> "0x564626466c90"
-"0x564626466d20" -> "0x564626466cc0"
-"0x564626466d50" -> "0x564626466d20"
-"0x564626467260" -> "0x564626466d50"
-"0x564626467290" -> "0x564626467260"
-"0x5646264672c0" -> "0x564626467290"
-"0x5646264674a0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626467470" [color = "#000800", fillcolor = green,    label = "JUMP_TYPE | 0"]
-"0x564626467440" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | song"]
-"0x564626467470" -> "0x564626467440"
-"0x5646264674a0" -> "0x564626467470"
-"0x5646264672c0" -> "0x5646264674a0"
-"0x564626466ab0" -> "0x5646264672c0"
-"0x5646264674d0" -> "0x564626466ab0"
-"0x5646264668d0" -> "0x5646264674d0"
-"0x564626467500" -> "0x5646264668d0"
-"0x5646264687b0" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
-"0x5646264675a0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | Discriminant"]
-"0x564626468780" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x5646264678f0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x5646264678c0" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
-"0x564626467890" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
-"0x5646264678c0" -> "0x564626467890"
-"0x5646264678f0" -> "0x5646264678c0"
-"0x564626467b00" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626467ad0" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
-"0x564626467a00" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
-"0x564626467ad0" -> "0x564626467a00"
-"0x564626467aa0" [color = "#000800", fillcolor = green,    label = "CONST_TYPE | pi"]
-"0x564626467ad0" -> "0x564626467aa0"
-"0x564626467b00" -> "0x564626467ad0"
-"0x5646264685e0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x5646264685b0" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
-"0x564626467cb0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | !="]
-"0x564626467c10" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x564626467cb0" -> "0x564626467c10"
-"0x564626467ce0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
-"0x564626467cb0" -> "0x564626467ce0"
-"0x5646264685b0" -> "0x564626467cb0"
-"0x564626468580" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
-"0x5646264680b0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x564626467de0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626467db0" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626467d80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is one root "]
-"0x564626467db0" -> "0x564626467d80"
-"0x564626467de0" -> "0x564626467db0"
-"0x564626468080" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626468050" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626468020" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | /"]
-"0x564626467f50" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
-"0x564626467f20" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | -1"]
-"0x564626467f50" -> "0x564626467f20"
-"0x564626467ef0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
-"0x564626467f50" -> "0x564626467ef0"
-"0x564626468020" -> "0x564626467f50"
-"0x564626467ff0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x564626468020" -> "0x564626467ff0"
-"0x564626468050" -> "0x564626468020"
-"0x564626468080" -> "0x564626468050"
-"0x564626467de0" -> "0x564626468080"
-"0x5646264680b0" -> "0x564626467de0"
-"0x564626468580" -> "0x5646264680b0"
-"0x564626468550" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
-"0x5646264681f0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | !="]
-"0x564626468150" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
-"0x5646264681f0" -> "0x564626468150"
-"0x564626468220" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
-"0x5646264681f0" -> "0x564626468220"
-"0x564626468550" -> "0x5646264681f0"
-"0x564626468520" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
-"0x564626468350" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x564626468320" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x5646264682f0" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x5646264682c0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is no roots"]
-"0x5646264682f0" -> "0x5646264682c0"
-"0x564626468320" -> "0x5646264682f0"
-"0x564626468350" -> "0x564626468320"
-"0x564626468520" -> "0x564626468350"
-"0x5646264684f0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x5646264684c0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626468490" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626468460" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is infinite number of roots"]
-"0x564626468490" -> "0x564626468460"
-"0x5646264684c0" -> "0x564626468490"
-"0x5646264684f0" -> "0x5646264684c0"
-"0x564626468520" -> "0x5646264684f0"
-"0x564626468550" -> "0x564626468520"
-"0x564626468580" -> "0x564626468550"
-"0x5646264685b0" -> "0x564626468580"
-"0x5646264685e0" -> "0x5646264685b0"
-"0x564626468750" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626468720" [color = "#000800", fillcolor = green,    label = "JUMP_TYPE | 0"]
-"0x5646264686f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | r"]
-"0x564626468720" -> "0x5646264686f0"
-"0x564626468750" -> "0x564626468720"
-"0x5646264685e0" -> "0x564626468750"
-"0x564626467b00" -> "0x5646264685e0"
-"0x5646264678f0" -> "0x564626467b00"
-"0x564626468780" -> "0x5646264678f0"
-"0x5646264675a0" -> "0x564626468780"
-"0x564626467640" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
-"0x5646264676e0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x564626467780" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
-"0x5646264676e0" -> "0x564626467780"
-"0x564626467640" -> "0x5646264676e0"
-"0x5646264675a0" -> "0x564626467640"
-"0x5646264687b0" -> "0x5646264675a0"
-"0x564626468e40" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
-"0x564626468850" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | LinearCase"]
-"0x564626468e10" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x564626468b00" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626468ad0" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626468aa0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | love you"]
-"0x564626468ad0" -> "0x564626468aa0"
-"0x564626468b00" -> "0x564626468ad0"
-"0x564626468ce0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626468cb0" [color = "#000800", fillcolor = green,    label = "INP_TYPE | 0"]
-"0x564626468c10" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | r"]
-"0x564626468cb0" -> "0x564626468c10"
-"0x564626468ce0" -> "0x564626468cb0"
-"0x564626468de0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626468db0" [color = "#000800", fillcolor = green,    label = "JUMP_TYPE | 0"]
-"0x564626468d80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | r"]
-"0x564626468db0" -> "0x564626468d80"
-"0x564626468de0" -> "0x564626468db0"
-"0x564626468ce0" -> "0x564626468de0"
-"0x564626468b00" -> "0x564626468ce0"
-"0x564626468e10" -> "0x564626468b00"
-"0x564626468850" -> "0x564626468e10"
-"0x5646264688f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
-"0x564626468990" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x5646264688f0" -> "0x564626468990"
-"0x564626468850" -> "0x5646264688f0"
-"0x564626468e40" -> "0x564626468850"
-"0x564626469c40" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
-"0x564626468ee0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | SquareSolver"]
-"0x564626469c10" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x5646264692a0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626469270" [color = "#000800", fillcolor = green,    label = "INP_TYPE | 0"]
-"0x5646264691d0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x564626469270" -> "0x5646264691d0"
-"0x5646264692a0" -> "0x564626469270"
-"0x564626469470" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626469440" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
-"0x564626469370" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
-"0x564626469340" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x"]
-"0x564626469370" -> "0x564626469340"
-"0x564626469440" -> "0x564626469370"
-"0x564626469410" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x564626469440" -> "0x564626469410"
-"0x564626469470" -> "0x564626469440"
-"0x564626469900" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x5646264698d0" [color = "#000800", fillcolor = green,    label = "LOOP_TYPE | 0"]
-"0x564626469700" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | \>"]
-"0x5646264696d0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 35"]
-"0x564626469700" -> "0x5646264696d0"
-"0x5646264695b0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 2"]
-"0x564626469700" -> "0x5646264695b0"
-"0x5646264698d0" -> "0x564626469700"
-"0x5646264698a0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
-"0x564626469870" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626469840" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626469810" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | you're pizdec!"]
-"0x564626469840" -> "0x564626469810"
-"0x564626469870" -> "0x564626469840"
-"0x5646264698a0" -> "0x564626469870"
-"0x5646264696a0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626469670" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
-"0x564626469640" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 35"]
-"0x564626469670" -> "0x564626469640"
-"0x564626469610" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | -"]
-"0x564626469580" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 35"]
-"0x564626469610" -> "0x564626469580"
-"0x5646264695e0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | step"]
-"0x564626469610" -> "0x5646264695e0"
-"0x564626469670" -> "0x564626469610"
-"0x5646264696a0" -> "0x564626469670"
-"0x5646264698a0" -> "0x5646264696a0"
-"0x5646264698d0" -> "0x5646264698a0"
-"0x564626469900" -> "0x5646264698d0"
-"0x564626469a70" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626469a40" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
-"0x564626469a10" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | pretty"]
-"0x564626469a40" -> "0x564626469a10"
-"0x564626469a70" -> "0x564626469a40"
-"0x564626469be0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
-"0x564626469bb0" [color = "#000800", fillcolor = green,    label = "JUMP_TYPE | 0"]
-"0x564626469b80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | r"]
-"0x564626469bb0" -> "0x564626469b80"
-"0x564626469be0" -> "0x564626469bb0"
-"0x564626469a70" -> "0x564626469be0"
-"0x564626469900" -> "0x564626469a70"
-"0x564626469470" -> "0x564626469900"
-"0x5646264692a0" -> "0x564626469470"
-"0x564626469c10" -> "0x5646264692a0"
-"0x564626468ee0" -> "0x564626469c10"
-"0x564626468f80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
-"0x564626469020" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
-"0x5646264690c0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
-"0x564626469020" -> "0x5646264690c0"
-"0x564626468f80" -> "0x564626469020"
-"0x564626468ee0" -> "0x564626468f80"
-"0x564626469c40" -> "0x564626468ee0"
-"0x564626468e40" -> "0x564626469c40"
-"0x5646264687b0" -> "0x564626468e40"
-"0x564626467500" -> "0x5646264687b0"
+"0x556d129d2290" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
+"0x556d129d0a90" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | SquareEquation"]
+"0x556d129d2260" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d0df0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d0dc0" [color = "#000800", fillcolor = green,    label = "INP_TYPE | 0"]
+"0x556d129d0cb0" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
+"0x556d129d0c80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d0cb0" -> "0x556d129d0c80"
+"0x556d129d0dc0" -> "0x556d129d0cb0"
+"0x556d129d0df0" -> "0x556d129d0dc0"
+"0x556d129d10e0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d10b0" [color = "#000800", fillcolor = green,    label = "INP_TYPE | 0"]
+"0x556d129d1010" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
+"0x556d129d0fe0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d1010" -> "0x556d129d0fe0"
+"0x556d129d10b0" -> "0x556d129d1010"
+"0x556d129d10e0" -> "0x556d129d10b0"
+"0x556d129d1280" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d1250" [color = "#000800", fillcolor = green,    label = "INP_TYPE | 0"]
+"0x556d129d11b0" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
+"0x556d129d1180" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d11b0" -> "0x556d129d1180"
+"0x556d129d1250" -> "0x556d129d11b0"
+"0x556d129d1280" -> "0x556d129d1250"
+"0x556d129d1450" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d1420" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
+"0x556d129d1350" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
+"0x556d129d1320" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x1"]
+"0x556d129d1350" -> "0x556d129d1320"
+"0x556d129d1420" -> "0x556d129d1350"
+"0x556d129d13f0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d1420" -> "0x556d129d13f0"
+"0x556d129d1450" -> "0x556d129d1420"
+"0x556d129d1620" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d15f0" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
+"0x556d129d1520" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
+"0x556d129d14f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | x2"]
+"0x556d129d1520" -> "0x556d129d14f0"
+"0x556d129d15f0" -> "0x556d129d1520"
+"0x556d129d15c0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d15f0" -> "0x556d129d15c0"
+"0x556d129d1620" -> "0x556d129d15f0"
+"0x556d129d20c0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d2090" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
+"0x556d129d1760" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | =="]
+"0x556d129d16c0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d1760" -> "0x556d129d16c0"
+"0x556d129d1790" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d1760" -> "0x556d129d1790"
+"0x556d129d2090" -> "0x556d129d1760"
+"0x556d129d2060" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
+"0x556d129d1960" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d1930" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d1900" [color = "#000800", fillcolor = green,    label = "CALL_TYPE | LinearCase"]
+"0x556d129d1830" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d18d0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d1830" -> "0x556d129d18d0"
+"0x556d129d1900" -> "0x556d129d1830"
+"0x556d129d1930" -> "0x556d129d1900"
+"0x556d129d1960" -> "0x556d129d1930"
+"0x556d129d2060" -> "0x556d129d1960"
+"0x556d129d2030" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d1d50" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d1d20" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
+"0x556d129d1a70" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d1d20" -> "0x556d129d1a70"
+"0x556d129d1cf0" [color = "#000800", fillcolor = green,    label = "CALL_TYPE | Discriminant"]
+"0x556d129d1b80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d1c20" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d1cc0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d1c20" -> "0x556d129d1cc0"
+"0x556d129d1b80" -> "0x556d129d1c20"
+"0x556d129d1cf0" -> "0x556d129d1b80"
+"0x556d129d1d20" -> "0x556d129d1cf0"
+"0x556d129d1d50" -> "0x556d129d1d20"
+"0x556d129d2000" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d1fd0" [color = "#000800", fillcolor = green,    label = "CALL_TYPE | SquareSolver"]
+"0x556d129d1e60" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d1f00" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d1fa0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d1f00" -> "0x556d129d1fa0"
+"0x556d129d1e60" -> "0x556d129d1f00"
+"0x556d129d1fd0" -> "0x556d129d1e60"
+"0x556d129d2000" -> "0x556d129d1fd0"
+"0x556d129d1d50" -> "0x556d129d2000"
+"0x556d129d2030" -> "0x556d129d1d50"
+"0x556d129d2060" -> "0x556d129d2030"
+"0x556d129d2090" -> "0x556d129d2060"
+"0x556d129d20c0" -> "0x556d129d2090"
+"0x556d129d2230" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d2200" [color = "#000800", fillcolor = green,    label = "JUMP_TYPE | 0"]
+"0x556d129d21d0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | song"]
+"0x556d129d2200" -> "0x556d129d21d0"
+"0x556d129d2230" -> "0x556d129d2200"
+"0x556d129d20c0" -> "0x556d129d2230"
+"0x556d129d1620" -> "0x556d129d20c0"
+"0x556d129d1450" -> "0x556d129d1620"
+"0x556d129d1280" -> "0x556d129d1450"
+"0x556d129d10e0" -> "0x556d129d1280"
+"0x556d129d0df0" -> "0x556d129d10e0"
+"0x556d129d2260" -> "0x556d129d0df0"
+"0x556d129d0a90" -> "0x556d129d2260"
+"0x556d129d2290" -> "0x556d129d0a90"
+"0x556d129d2d20" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
+"0x556d129d2330" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | Discriminant"]
+"0x556d129d2cf0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d2750" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d2720" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
+"0x556d129d2650" [color = "#000800", fillcolor = green,    label = "DECL_TYPE | 0"]
+"0x556d129d2620" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | disc"]
+"0x556d129d2650" -> "0x556d129d2620"
+"0x556d129d2720" -> "0x556d129d2650"
+"0x556d129d26f0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d2720" -> "0x556d129d26f0"
+"0x556d129d2750" -> "0x556d129d2720"
+"0x556d129d2b50" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d2b20" [color = "#000800", fillcolor = green,    label = "ASGN_TYPE | ="]
+"0x556d129d27f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | disc"]
+"0x556d129d2b20" -> "0x556d129d27f0"
+"0x556d129d2af0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | -"]
+"0x556d129d28f0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | ^"]
+"0x556d129d2890" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d28f0" -> "0x556d129d2890"
+"0x556d129d28c0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 2"]
+"0x556d129d28f0" -> "0x556d129d28c0"
+"0x556d129d2af0" -> "0x556d129d28f0"
+"0x556d129d2ac0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d29f0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d2920" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 4"]
+"0x556d129d29f0" -> "0x556d129d2920"
+"0x556d129d29c0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d29f0" -> "0x556d129d29c0"
+"0x556d129d2ac0" -> "0x556d129d29f0"
+"0x556d129d2a90" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d2ac0" -> "0x556d129d2a90"
+"0x556d129d2af0" -> "0x556d129d2ac0"
+"0x556d129d2b20" -> "0x556d129d2af0"
+"0x556d129d2b50" -> "0x556d129d2b20"
+"0x556d129d2cc0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d2c90" [color = "#000800", fillcolor = green,    label = "JUMP_TYPE | 0"]
+"0x556d129d2c60" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | disc"]
+"0x556d129d2c90" -> "0x556d129d2c60"
+"0x556d129d2cc0" -> "0x556d129d2c90"
+"0x556d129d2b50" -> "0x556d129d2cc0"
+"0x556d129d2750" -> "0x556d129d2b50"
+"0x556d129d2cf0" -> "0x556d129d2750"
+"0x556d129d2330" -> "0x556d129d2cf0"
+"0x556d129d23d0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d2470" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d2510" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d2470" -> "0x556d129d2510"
+"0x556d129d23d0" -> "0x556d129d2470"
+"0x556d129d2330" -> "0x556d129d23d0"
+"0x556d129d2d20" -> "0x556d129d2330"
+"0x556d129d3a40" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
+"0x556d129d2dc0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | LinearCase"]
+"0x556d129d3a10" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d39e0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d39b0" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
+"0x556d129d30b0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | !="]
+"0x556d129d3010" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d30b0" -> "0x556d129d3010"
+"0x556d129d30e0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d30b0" -> "0x556d129d30e0"
+"0x556d129d39b0" -> "0x556d129d30b0"
+"0x556d129d3980" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
+"0x556d129d34b0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d31e0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d31b0" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d3180" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is one root "]
+"0x556d129d31b0" -> "0x556d129d3180"
+"0x556d129d31e0" -> "0x556d129d31b0"
+"0x556d129d3480" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d3450" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d3420" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | /"]
+"0x556d129d3350" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d3320" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | -1"]
+"0x556d129d3350" -> "0x556d129d3320"
+"0x556d129d32f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d3350" -> "0x556d129d32f0"
+"0x556d129d3420" -> "0x556d129d3350"
+"0x556d129d33f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d3420" -> "0x556d129d33f0"
+"0x556d129d3450" -> "0x556d129d3420"
+"0x556d129d3480" -> "0x556d129d3450"
+"0x556d129d31e0" -> "0x556d129d3480"
+"0x556d129d34b0" -> "0x556d129d31e0"
+"0x556d129d3980" -> "0x556d129d34b0"
+"0x556d129d3950" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
+"0x556d129d35f0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | !="]
+"0x556d129d3550" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | c"]
+"0x556d129d35f0" -> "0x556d129d3550"
+"0x556d129d3620" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d35f0" -> "0x556d129d3620"
+"0x556d129d3950" -> "0x556d129d35f0"
+"0x556d129d3920" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
+"0x556d129d3750" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d3720" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d36f0" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d36c0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is no roots"]
+"0x556d129d36f0" -> "0x556d129d36c0"
+"0x556d129d3720" -> "0x556d129d36f0"
+"0x556d129d3750" -> "0x556d129d3720"
+"0x556d129d3920" -> "0x556d129d3750"
+"0x556d129d38f0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d38c0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d3890" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d3860" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is infinite number of roots"]
+"0x556d129d3890" -> "0x556d129d3860"
+"0x556d129d38c0" -> "0x556d129d3890"
+"0x556d129d38f0" -> "0x556d129d38c0"
+"0x556d129d3920" -> "0x556d129d38f0"
+"0x556d129d3950" -> "0x556d129d3920"
+"0x556d129d3980" -> "0x556d129d3950"
+"0x556d129d39b0" -> "0x556d129d3980"
+"0x556d129d39e0" -> "0x556d129d39b0"
+"0x556d129d3a10" -> "0x556d129d39e0"
+"0x556d129d2dc0" -> "0x556d129d3a10"
+"0x556d129d2e60" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d2f00" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d2e60" -> "0x556d129d2f00"
+"0x556d129d2dc0" -> "0x556d129d2e60"
+"0x556d129d3a40" -> "0x556d129d2dc0"
+"0x556d129d52b0" [color = "#000800", fillcolor = "#8264ff",  label = "FUNC_TYPE | 0"]
+"0x556d129d3ae0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | SquareSolver"]
+"0x556d129d5280" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d5250" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d5220" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
+"0x556d129d3e70" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | \<"]
+"0x556d129d3dd0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d3e70" -> "0x556d129d3dd0"
+"0x556d129d3ea0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d3e70" -> "0x556d129d3ea0"
+"0x556d129d5220" -> "0x556d129d3e70"
+"0x556d129d51f0" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
+"0x556d129d3fd0" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d3fa0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d3f70" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d3f40" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is no roots"]
+"0x556d129d3f70" -> "0x556d129d3f40"
+"0x556d129d3fa0" -> "0x556d129d3f70"
+"0x556d129d3fd0" -> "0x556d129d3fa0"
+"0x556d129d51f0" -> "0x556d129d3fd0"
+"0x556d129d51c0" [color = "#000800", fillcolor = green,    label = "COMP_TYPE | 0"]
+"0x556d129d4110" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | =="]
+"0x556d129d4070" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d4110" -> "0x556d129d4070"
+"0x556d129d4140" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 0"]
+"0x556d129d4110" -> "0x556d129d4140"
+"0x556d129d51c0" -> "0x556d129d4110"
+"0x556d129d5190" [color = "#000800", fillcolor = green,    label = "IFEL_TYPE | 0"]
+"0x556d129d4570" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d4240" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d4210" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d41e0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThere is one root "]
+"0x556d129d4210" -> "0x556d129d41e0"
+"0x556d129d4240" -> "0x556d129d4210"
+"0x556d129d4540" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d4510" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d44e0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | /"]
+"0x556d129d43b0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d4380" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | -1"]
+"0x556d129d43b0" -> "0x556d129d4380"
+"0x556d129d4350" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d43b0" -> "0x556d129d4350"
+"0x556d129d44e0" -> "0x556d129d43b0"
+"0x556d129d44b0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d43e0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 2"]
+"0x556d129d44b0" -> "0x556d129d43e0"
+"0x556d129d4480" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d44b0" -> "0x556d129d4480"
+"0x556d129d44e0" -> "0x556d129d44b0"
+"0x556d129d4510" -> "0x556d129d44e0"
+"0x556d129d4540" -> "0x556d129d4510"
+"0x556d129d4240" -> "0x556d129d4540"
+"0x556d129d4570" -> "0x556d129d4240"
+"0x556d129d5190" -> "0x556d129d4570"
+"0x556d129d5160" [color = "#000800", fillcolor = turquoise,    label = "CODE_TYPE | 0"]
+"0x556d129d46e0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d46b0" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d4680" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nThe first root is "]
+"0x556d129d46b0" -> "0x556d129d4680"
+"0x556d129d46e0" -> "0x556d129d46b0"
+"0x556d129d4b50" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d4b20" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d4af0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | /"]
+"0x556d129d49c0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | +"]
+"0x556d129d4850" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d4820" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | -1"]
+"0x556d129d4850" -> "0x556d129d4820"
+"0x556d129d47f0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d4850" -> "0x556d129d47f0"
+"0x556d129d49c0" -> "0x556d129d4850"
+"0x556d129d4990" [color = "#000800", fillcolor = green,    label = "CALL_TYPE | sqrt"]
+"0x556d129d4960" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d4990" -> "0x556d129d4960"
+"0x556d129d49c0" -> "0x556d129d4990"
+"0x556d129d4af0" -> "0x556d129d49c0"
+"0x556d129d4ac0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d49f0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 2"]
+"0x556d129d4ac0" -> "0x556d129d49f0"
+"0x556d129d4a90" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d4ac0" -> "0x556d129d4a90"
+"0x556d129d4af0" -> "0x556d129d4ac0"
+"0x556d129d4b20" -> "0x556d129d4af0"
+"0x556d129d4b50" -> "0x556d129d4b20"
+"0x556d129d4cc0" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d4c90" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d4c60" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | \nAnd the second is "]
+"0x556d129d4c90" -> "0x556d129d4c60"
+"0x556d129d4cc0" -> "0x556d129d4c90"
+"0x556d129d5130" [color = "#000800", fillcolor = green,    label = "EXP_TYPE | 0"]
+"0x556d129d5100" [color = "#000800", fillcolor = green,    label = "OUT_TYPE | 0"]
+"0x556d129d50d0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | /"]
+"0x556d129d4fa0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | -"]
+"0x556d129d4e30" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d4e00" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | -1"]
+"0x556d129d4e30" -> "0x556d129d4e00"
+"0x556d129d4dd0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d4e30" -> "0x556d129d4dd0"
+"0x556d129d4fa0" -> "0x556d129d4e30"
+"0x556d129d4f70" [color = "#000800", fillcolor = green,    label = "CALL_TYPE | sqrt"]
+"0x556d129d4f40" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d4f70" -> "0x556d129d4f40"
+"0x556d129d4fa0" -> "0x556d129d4f70"
+"0x556d129d50d0" -> "0x556d129d4fa0"
+"0x556d129d50a0" [color = "#000800", fillcolor = green,    label = "MATH_TYPE | *"]
+"0x556d129d4fd0" [color = "#000800", fillcolor = yellow,    label = "NUM_TYPE | 2"]
+"0x556d129d50a0" -> "0x556d129d4fd0"
+"0x556d129d5070" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d50a0" -> "0x556d129d5070"
+"0x556d129d50d0" -> "0x556d129d50a0"
+"0x556d129d5100" -> "0x556d129d50d0"
+"0x556d129d5130" -> "0x556d129d5100"
+"0x556d129d4cc0" -> "0x556d129d5130"
+"0x556d129d4b50" -> "0x556d129d4cc0"
+"0x556d129d46e0" -> "0x556d129d4b50"
+"0x556d129d5160" -> "0x556d129d46e0"
+"0x556d129d5190" -> "0x556d129d5160"
+"0x556d129d51c0" -> "0x556d129d5190"
+"0x556d129d51f0" -> "0x556d129d51c0"
+"0x556d129d5220" -> "0x556d129d51f0"
+"0x556d129d5250" -> "0x556d129d5220"
+"0x556d129d5280" -> "0x556d129d5250"
+"0x556d129d3ae0" -> "0x556d129d5280"
+"0x556d129d3b80" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | a"]
+"0x556d129d3c20" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | b"]
+"0x556d129d3cc0" [color = "#000800", fillcolor = yellow,    label = "STR_TYPE | D"]
+"0x556d129d3c20" -> "0x556d129d3cc0"
+"0x556d129d3b80" -> "0x556d129d3c20"
+"0x556d129d3ae0" -> "0x556d129d3b80"
+"0x556d129d52b0" -> "0x556d129d3ae0"
+"0x556d129d3a40" -> "0x556d129d52b0"
+"0x556d129d2d20" -> "0x556d129d3a40"
+"0x556d129d2290" -> "0x556d129d2d20"
 }

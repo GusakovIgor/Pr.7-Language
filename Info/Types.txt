@@ -6,7 +6,7 @@ CALL_TYPE		// Calling a function                   ||
                                                        --
 DECL_TYPE		//+/ New variable					||	new x
 ASGN_TYPE		//+/ Definition of variable             ||	choose x as y
-INP_TYPE       //+/ Input                              ||   record x from input
+INP_TYPE        //+/ Input                              ||   record x from input
 OUT_TYPE		//+/ Output						||	echo ("...")   or   echo (x)
                                                        --
                                                        --
@@ -15,7 +15,7 @@ COMP_TYPE		// Compare statement				||	pitch (a > b)
 IFEL_TYPE		// Contains if and else code 	          ||	{...} otherwise {...}
                                                        --
                                                        --
-NUM_TYPE       //+/ number						||	any double
+NUM_TYPE        //+/ number						||	any double
 STR_TYPE		//+/ string						||	"..."
 MATH_TYPE		// math operations     			     ||	+ - * / ^   or   > == != <
                                                        --

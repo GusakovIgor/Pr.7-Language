@@ -26,7 +26,7 @@ song SquareEquation ()
 sample Discriminant (a, b, c)
 {
     choose new disc as 0;
-    disc = b^2 - 4*a*c;
+    choose disc as b^2 - 4*a*c;
     
     save disc;
 }
@@ -37,7 +37,7 @@ sample LinearCase (a, b)
     pitch b not 0
     {
         echo ("\nThere is one root ");
-        echo ((-c)/b)
+        echo ((-c)/b);
     }
     otherwise pitch c not 0
     {
@@ -56,7 +56,7 @@ sample SquareSolver (a, b, D)
     {
         echo ("\nThere is no roots");
     }
-    otherwise pitch D is 0
+    otherwise pitch D same 0
     {
         echo ("\nThere is one root ");
         echo ((-b) / (2*a));

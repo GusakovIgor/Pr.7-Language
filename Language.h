@@ -59,8 +59,8 @@ enum node_types {
                     JUMP_TYPE,		//+/ returning from function		        |	save x   or   save song
                     CALL_TYPE,		// calling a functions                      |
 
-                    COMP_TYPE,		// compare						            |	pitch
-                    IFEL_TYPE,		// contains if/else code     	            |	{...} {...}
+                    COMP_TYPE,		//+/ compare						            |	pitch
+                    IFEL_TYPE,		//+/ contains if/else code     	            |	{...} {...}
                     LOOP_TYPE,		//+/ loop 						            |	back_echo   or   reverberation
 
                     MATH_TYPE,		//+/ math operations			            |	+ - * / ^   or   > == != <
@@ -205,7 +205,7 @@ Node* GetOp (String* buff);
 
 Node* GetCall (String* buff, char* func);
 
-Node* GetSave (String* buff);
+Node* GetSave (String* buff, char* func);
 
 //---------------------------
 

@@ -347,6 +347,10 @@ void PrintNodeLogs  (Node* node, FILE* GraphicLogs)
             case (JUMP_TYPE):   fprintf (GraphicLogs, "\"%p\" [color = \"#000800\", fillcolor = green,    label = \"%s | %lg\"]\n",
                                                                                     node, "JUMP_TYPE", node->value.dbl_val);
                                 break;
+
+            case (CALL_TYPE):   fprintf (GraphicLogs, "\"%p\" [color = \"#000800\", fillcolor = green,    label = \"%s | %s\"]\n",
+                                                                                    node, "CALL_TYPE", node->value.str_val);
+                                break;
                                 
 
             case (COMP_TYPE):   fprintf (GraphicLogs, "\"%p\" [color = \"#000800\", fillcolor = green,    label = \"%s | %lg\"]\n",

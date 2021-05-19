@@ -111,6 +111,7 @@ Node* GetArgs (String* buff)
 
 		Node* temp  = value;
 
+
 		while (symbol == ',')
 		{
 			buff->offset++;
@@ -144,7 +145,6 @@ Node* GetCode (String* buff)
 		value = GetExp (buff);
 		Check
 	}
-	printf ("OK\n");
 
 	if (value)
 	{
@@ -191,7 +191,7 @@ Node* GetExp (String* buff)
 		case ('e'): value = GetEcase   (buff, func);
 					break;
 
-		case ('s'):	value = GetSave    (buff);
+		case ('s'):	value = GetSave    (buff, func);
 					break;
 		
 		case ('b'): value = GetBcase   (buff, func);
@@ -268,7 +268,6 @@ Node* GetInput  (String* buff)
 	SyntaxRequire (buff, WORD, "record");
 	Check
 	SkipSpaces (buff);
-
 
 	Node* value = NULL;
 	if (SyntaxCheck (buff, WORD, "new"))
@@ -565,11 +564,10 @@ Node* GetOp (String* buff)
 
 Node* GetCall (String* buff, char* func)
 {
-	Node* args = GetArgs (buff);
-	Check
+	buff->offset += strlen (func);
 	SkipSpaces (buff);
 
-	SyntaxRequire (buff, SYMBOL, ';');
+	Node* args = GetArgs (buff);
 	Check
 	SkipSpaces (buff);
 
@@ -577,11 +575,19 @@ Node* GetCall (String* buff, char* func)
 }
 
 
-Node* GetSave (String* buff)
+Node* GetSave (String* buff, char* func)
 {
-	SyntaxRequire (buff, WORD, "save");
-	Check
-	SkipSpaces (buff);
+	if (strcmp (func, "save") != 0)
+	{
+		return GetCall (buff, func);
+	}
+	else
+	{
+		buff->offset += strlen (func);
+		SkipSpaces (buff);
+	}
+	// SyntaxRequire (buff, WORD, "save");
+	// Check
 
 	Node* value = GetMath (buff);
 	Check
@@ -637,11 +643,8 @@ Node* GetVarName  (String* buff)
 char* GetWord (String* buff)
 {
 	char* name = (char*) calloc (MAX_NAME_LEN, sizeof (char));
-	int len = 0;
 
-	sscanf (buff->pointer + buff->offset, "%[A-Za-z_]%n", name, len);
-	
-	buff->offset += len;
+	sscanf (buff->pointer + buff->offset, " %[a-zA-Z_]", name);
 
 	return name;
 }
@@ -828,34 +831,36 @@ Node* GetVariable_Or_Function (String* buff)
 
 Node* GetVariable (String* buff)
 {
-    int mark = buff->offset;
-
     char* variable = (char*) calloc (MAX_NAME_LEN, sizeof (char));
+    
     int len = 0;
     sscanf (buff->pointer + buff->offset, "%[A-Za-z0-9_]%n", variable, &len);
     buff->offset += len;
+
+    SkipSpaces (buff);
     
     double constant = FindConstant (variable);
-    
+    if (constant)
+    {
+    	return CONST (constant);
+    }
+
     if (symbol == '(')
     {
         int function = FindFunction (variable);
+        
         if (!function)
         {
-            buff->offset = mark;
-            ErrorReport (buff, WRONG_FUNC);
+        	buff->offset -= len;
+            return GetCall (buff, variable);
             Check
         }
         
         return MFUNC (function);
     }
-    else if (!constant)
-    {
-        return STR   (NULL, NULL, variable);
-    }
     else
     {
-        return CONST (constant);
+        return STR   (NULL, NULL, variable);
     }
 }
 
@@ -868,7 +873,7 @@ Node* GetVariable (String* buff)
 void SkipSpaces (String* buff)
 {
 	int count = 0;
-    while (symbol == ' ' || symbol == '\t' || symbol == '\0')
+    while (isspace (symbol) || symbol == '\0')
     {
     	if (buff->offset == buff->size)
     		break;
